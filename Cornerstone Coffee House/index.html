@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cornerstone Coffee House</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            Cornerstone<span>.</span>
+        </a>
+
+        <button id="menuButton" class="menu-button" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">Our Story</a>
+            <a href="#menu">Coffee Collection</a>
+            <a href="#visit">Visit Us</a>
+        </nav>
+
+        <a href="#menu" class="header-button">Explore Coffee</a>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">SPECIALTY COFFEE CULTURE</p>
+
+                <h1>
+                    Find your<br>
+                    perfect <span>brew.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Thoughtfully sourced beans, expertly crafted
+                    coffee and a space designed for good moments.
+                    Welcome to Cornerstone.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#menu" class="primary-button">Discover Our Coffee</a>
+                    <a href="#about" class="secondary-button">Our Story</a>
+                </div>
+
+                <div class="hero-note">
+                    <i class="fa-solid fa-seedling"></i>
+                    Good coffee. Honest craft.
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1000"
+                    alt="Freshly prepared specialty coffee"
+                >
+
+                <div class="image-label">
+                    <span>OUR PHILOSOPHY</span>
+                    <strong>Good coffee. Honest craft.</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="about-section" id="about">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=900"
+                    alt="Modern Cornerstone coffee house interior"
+                >
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">THE CORNERSTONE STORY</p>
+
+                <h2>Coffee is our craft. Connection is our purpose.</h2>
+
+                <p>
+                    We started with a simple idea: great coffee
+                    should be an experience, not just a routine.
+
+                    From carefully selected coffee beans to
+                    the final pour, every detail matters.
+                    We create a welcoming environment where
+                    people can work, relax and connect.
+                </p>
+
+                <a href="#visit" class="text-link">
+                    Discover our experience
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="menu-section" id="menu">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">EXPLORE OUR SELECTION</p>
+                    <h2>The coffee collection.</h2>
+                </div>
+
+                <p>
+                    From familiar favourites to exciting
+                    specialty creations, find your next cup.
+                </p>
+
+            </div>
+
+
+            <div class="menu-filters">
+
+                <button class="filter-button active" data-category="all">
+                    All Coffee
+                </button>
+
+                <button class="filter-button" data-category="espresso">
+                    Espresso
+                </button>
+
+                <button class="filter-button" data-category="cold">
+                    Cold Coffee
+                </button>
+
+                <button class="filter-button" data-category="specialty">
+                    Specialty
+                </button>
+
+            </div>
+
+
+            <div class="menu-grid">
+
+                <article class="menu-card espresso">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=700"
+                        alt="Classic espresso coffee"
+                    >
+
+                    <div class="menu-card-content">
+                        <p>ESPRESSO</p>
+                        <h3>Classic Espresso</h3>
+                        <span>₦3,000</span>
+                    </div>
+
+                </article>
+
+
+                <article class="menu-card cold">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700"
+                        alt="Refreshing iced coffee"
+                    >
+
+                    <div class="menu-card-content">
+                        <p>COLD COFFEE</p>
+                        <h3>Iced Caramel Latte</h3>
+                        <span>₦4,000</span>
+                    </div>
+
+                </article>
+
+
+                <article class="menu-card specialty">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=700"
+                        alt="Specialty pour-over coffee"
+                    >
+
+                    <div class="menu-card-content">
+                        <p>SPECIALTY</p>
+                        <h3>Signature Pour Over</h3>
+                        <span>₦4,500</span>
+                    </div>
+
+                </article>
+
+
+                <article class="menu-card specialty">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=700"
+                        alt="Mocha coffee served in a cup"
+                    >
+
+                    <div class="menu-card-content">
+                        <p>SPECIALTY</p>
+                        <h3>Mocha Signature</h3>
+                        <span>₦4,200</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="visit-section" id="visit">
+
+            <div class="visit-content">
+
+                <p class="eyebrow">COME FIND YOUR CORNER</p>
+
+                <h2>Your next favourite cup is waiting.</h2>
+
+                <p>
+                    Visit Cornerstone Coffee House and enjoy
+                    a little moment of something special.
+                    Whether you're meeting friends or taking
+                    a break, there's always a place for you.
+                </p>
+
+            </div>
+
+
+            <div class="visit-details">
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Our Location</h3>
+                    <p>18 Green Avenue, Lagos, Nigeria</p>
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-clock"></i>
+                    <h3>Opening Hours</h3>
+                    <p>Monday – Saturday</p>
+                    <p>8:00 AM – 9:00 PM</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Contact</h3>
+                    <p>+234 800 123 4567</p>
+                    <p>hello@cornerstonecoffee.com</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            Cornerstone<span>.</span>
+        </a>
+
+        <p>GOOD COFFEE. GROUNDED MOMENTS.</p>
+
+        <p>© 2026 Cornerstone Coffee House.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
