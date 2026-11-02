@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetBite | Street Food Culture</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">STREET<span>BITE.</span></a>
+
+        <button class="menu-button" id="menuButton" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navigation">
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#story">Our Story</a>
+            <a href="#location">Find Us</a>
+        </nav>
+
+        <button class="order-button" id="orderButton">
+            Your Order <i class="fa-solid fa-bag-shopping"></i>
+            <span id="orderCount">0</span>
+        </button>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">GOOD FOOD. NO RULES.</p>
+
+                <h1>
+                    STREET FOOD.<br>
+                    <span>BIG ENERGY.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Real flavour. Fresh ingredients. Street food
+                    made for people who refuse to eat boring.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#menu" class="primary-button">Explore Our Menu</a>
+                    <a href="#location" class="text-link">Find Our Truck <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-stamp">
+                <span>FRESH</span>
+                <i class="fa-solid fa-fire"></i>
+                <span>DAILY</span>
+            </div>
+
+            <div class="hero-bottom">
+                <span>MADE FRESH. SERVED HOT.</span>
+                <span>01 / STREET FOOD CULTURE</span>
+            </div>
+        </section>
+
+        <section class="story-section" id="story">
+            <div class="story-image">
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1000"
+                    alt="Freshly prepared gourmet burger">
+
+                <div class="image-caption">
+                    <span>FRESH OFF THE GRILL</span>
+                    <i class="fa-solid fa-fire"></i>
+                </div>
+            </div>
+
+            <div class="story-content">
+                <p class="eyebrow">NOT YOUR ORDINARY FOOD TRUCK</p>
+
+                <h2>
+                    Born on the streets.<br>
+                    <span>Built for flavour.</span>
+                </h2>
+
+                <p>
+                    StreetBite started with one simple idea:
+                    great food should be exciting, accessible
+                    and unforgettable.
+                </p>
+
+                <p>
+                    From handcrafted burgers to loaded street
+                    favourites, every bite brings something
+                    different to the table.
+                </p>
+
+                <a href="#menu" class="text-link">
+                    Discover our food <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">STRAIGHT FROM OUR KITCHEN</p>
+                    <h2>THE STREET <span>MENU.</span></h2>
+                </div>
+
+                <p>
+                    Big portions. Bold flavours.
+                    Nothing ordinary.
+                </p>
+            </div>
+
+            <div class="menu-filters">
+                <button class="filter-button active" data-category="all">All</button>
+                <button class="filter-button" data-category="burger">Burgers</button>
+                <button class="filter-button" data-category="chicken">Chicken</button>
+                <button class="filter-button" data-category="sides">Sides</button>
+            </div>
+
+            <div class="menu-grid">
+
+                <article class="menu-card burger">
+                    <div class="menu-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700"
+                            alt="Classic street burger">
+                        <span class="menu-tag">BEST SELLER</span>
+                    </div>
+
+                    <div class="menu-card-content">
+                        <div class="menu-title">
+                            <h3>The Street Classic</h3>
+                            <span>₦8,500</span>
+                        </div>
+
+                        <p>Grilled beef, melted cheese, lettuce and signature sauce.</p>
+
+                        <button class="add-button" data-name="The Street Classic" data-price="8500">
+                            Add to Order <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="menu-card chicken">
+                    <div class="menu-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=700"
+                            alt="Crispy fried chicken">
+                    </div>
+
+                    <div class="menu-card-content">
+                        <div class="menu-title">
+                            <h3>Crunch Box</h3>
+                            <span>₦7,000</span>
+                        </div>
+
+                        <p>Golden crispy chicken with a bold seasoned coating.</p>
+
+                        <button class="add-button" data-name="Crunch Box" data-price="7000">
+                            Add to Order <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="menu-card sides">
+                    <div class="menu-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=700"
+                            alt="Seasoned golden fries">
+                    </div>
+
+                    <div class="menu-card-content">
+                        <div class="menu-title">
+                            <h3>Loaded Street Fries</h3>
+                            <span>₦4,500</span>
+                        </div>
+
+                        <p>Crispy fries topped with cheese and house seasoning.</p>
+
+                        <button class="add-button" data-name="Loaded Street Fries" data-price="4500">
+                            Add to Order <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="menu-card burger">
+                    <div class="menu-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=700"
+                            alt="Double cheeseburger">
+                                            </div>
+
+                    <div class="menu-card-content">
+                        <div class="menu-title">
+                            <h3>Double Trouble</h3>
+                            <span>₦11,000</span>
+                        </div>
+
+                        <p>Double beef patties, double cheese and smoky sauce.</p>
+
+                        <button class="add-button" data-name="Double Trouble" data-price="11000">
+                            Add to Order <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="location-section" id="location">
+            <div class="location-content">
+                <p class="eyebrow">CATCH US AROUND TOWN</p>
+
+                <h2>GOOD FOOD<br><span>IS ON THE MOVE.</span></h2>
+
+                <p>
+                    We bring the kitchen to the streets.
+                    Find our truck, grab your favourites
+                    and enjoy the StreetBite experience.
+                </p>
+
+                <div class="location-details">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Our current location</span>
+                        <strong>City Centre, Port Harcourt</strong>
+                    </div>
+
+                    <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Opening hours</span>
+                        <strong>Monday – Saturday · 12PM – 9PM</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-visual">
+                <img
+                    src="https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?w=1000"
+                    alt="Street food truck">
+
+                <div class="location-label">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>STREETBITE IS HERE</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="logo">STREET<span>BITE.</span></a>
+
+        <p>Good food. Great streets. Unforgettable flavour.</p>
+
+        <span>© 2026 StreetBite. All rights reserved.</span>
+    </footer>
+
+    <div class="order-overlay" id="orderOverlay"></div>
+
+    <aside class="order-panel" id="orderPanel">
+        <div class="order-header">
+            <h2>Your Order</h2>
+            <button id="closeOrder" aria-label="Close order">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="order-items" id="orderItems">
+            <p class="empty-order">Your order is empty.</p>
+        </div>
+
+        <div class="order-total">
+            <span>Total</span>
+            <strong id="orderTotal">₦0</strong>
+        </div>
+
+        <button class="checkout-button" id="clearOrder">
+            Clear Order
+        </button>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
