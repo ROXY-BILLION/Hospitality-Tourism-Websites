@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rolling Kitchen | Street Food Reimagined</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+            <span>THE ROLLING<span class="logo-highlight"> KITCHEN.</span></span>
+        </a>
+
+        <button class="menu-button" id="menuButton" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="navigation" id="navigation">
+            <a href="#home">Home</a>
+            <a href="#story">Our Story</a>
+            <a href="#menu">Menu</a>
+            <a href="#location">Find Us</a>
+        </nav>
+
+        <button class="order-button" id="orderButton">
+            Your Order <i class="fa-solid fa-basket-shopping"></i>
+            <span id="orderCount">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="hero-label">GOOD FOOD. GOOD MOOD. GOOD TIMES.</p>
+                <h1>STREET FOOD.<br><span>REIMAGINED.</span></h1>
+                <p class="hero-description">
+                    Big flavours, fresh ingredients and street-food
+                    favourites made with a little extra love.
+                </p>
+                <a href="#menu" class="hero-button">
+                    Explore Our Menu <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="hero-stamp">
+                <span>FRESH</span>
+                <i class="fa-solid fa-leaf"></i>
+                <span>EVERY DAY</span>
+            </div>
+
+            <div class="hero-bottom">
+                <span>MADE FRESH. SERVED FAST.</span>
+                <span>EST. 2024 — PORT HARCOURT</span>
+            </div>
+        </section>
+
+        <section class="story-section" id="story">
+            <div class="story-image">
+                <img
+                    src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=900"
+                    alt="Freshly prepared street-food tacos">
+                <span class="image-note">FRESH FROM OUR KITCHEN</span>
+            </div>
+
+            <div class="story-content">
+                <p class="section-label">A LITTLE ABOUT US</p>
+                <h2>WE BELIEVE<br>GOOD FOOD<br><span>BRINGS US</span><br>TOGETHER.</h2>
+
+                <p>
+                    The Rolling Kitchen started with one simple idea:
+                    street food should be exciting, fresh and full of flavour.
+                    We bring together bold ingredients and familiar favourites
+                    to create food worth coming back for.
+                </p>
+
+                <a href="#menu" class="text-link">
+                    Discover Our Food <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">MADE TO SATISFY</p>
+                    <h2>THE GOOD STUFF<span>.</span></h2>
+                </div>
+                <p>Freshly made favourites. Big portions. Bigger flavours.</p>
+            </div>
+
+            <div class="menu-filters">
+                <button class="filter-button active" data-category="all">Everything</button>
+                <button class="filter-button" data-category="tacos">Tacos</button>
+                <button class="filter-button" data-category="fries">Loaded Fries</button>
+                <button class="filter-button" data-category="wraps">Wraps</button>
+            </div>
+
+            <div class="menu-grid">
+                <article class="menu-card tacos">
+                    <div class="menu-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=700"
+                            alt="Grilled chicken tacos">
+                        <span class="menu-number">01</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title">
+                            <h3>Street Chicken Tacos</h3>
+                            <span>₦8,500</span>
+                        </div>
+                        <p>Grilled chicken, fresh salsa, creamy sauce and soft tortillas.</p>
+                        <button class="add-button" data-name="Street Chicken Tacos" data-price="8500">
+                            Add to Order <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="menu-card fries">
+                    <div class="menu-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=700"
+                            alt="Loaded golden fries">
+                        <span class="menu-number">02</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title">
+                            <h3>Loaded Street Fries</h3>
+                            <span>₦7,000</span>
+                        </div>
+                        <p>Crispy fries topped with cheese, seasoned beef and signature sauce.</p>
+                        <button class="add-button" data-name="Loaded Street Fries" data-price="7000">
+                            Add to Order <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="menu-card wraps">
+                    <div class="menu-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=700"
+                            alt="Fresh chicken wrap">
+                        <span class="menu-number">03</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title">
+                            <h3>Firecracker Chicken Wrap</h3>
+                            <span>₦9,000</span>
+                        </div>
+                        <p>Spiced chicken, crunchy vegetables and a bold house dressing.</p>
+                        <button class="add-button" data-name="Firecracker Chicken Wrap" data-price="9000">
+                            Add to Order <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="menu-card tacos">
+                    <div class="menu-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=700"
+                            alt="Beef street tacos">
+                        <span class="menu-number">04</span>
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-title">
+                            <h3>Smoky Beef Tacos</h3>
+                            <span>₦10,000</span>
+                        </div>
+                        <p>Slow-seasoned beef, crisp onions, fresh herbs and smoky salsa.</p>
+                        <button class="add-button" data-name="Smoky Beef Tacos" data-price="10000">
+                            Add to Order <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="location-section" id="location">
+            <div class="location-content">
+                <p class="section-label">CATCH US ON THE MOVE</p>
+                <h2>GOOD FOOD<br>IS NEVER<br><span>TOO FAR.</span></h2>
+                <p>
+                    We're bringing the kitchen to your neighbourhood.
+                    Find our truck, grab your favourites and enjoy
+                    something freshly made.
+                </p>
+
+                <div class="location-details">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Port Harcourt, Nigeria</span>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Monday – Saturday, 11AM – 8PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-visual">
+                <img
+                    src="https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?w=900"
+                    alt="Colourful mobile food truck">
+                <div class="location-tag">
+                    <span>YOUR NEXT</span>
+                    <strong>FOOD STOP.</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">
+            THE ROLLING<span class="logo-highlight"> KITCHEN.</span>
+        </a>
+        <p>Fresh food. Big flavour. Always moving.</p>
+        <span>© 2026 The Rolling Kitchen. All rights reserved.</span>
+    </footer>
+
+    <div class="order-overlay" id="orderOverlay"></div>
+
+    <aside class="order-panel" id="orderPanel">
+        <div class="order-header">
+            <div>
+                <p class="section-label">YOUR FOOD SELECTION</p>
+                <h2>Your Order</h2>
+            </div>
+            <button id="closeOrder" aria-label="Close order panel">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="order-items" id="orderItems">
+            <p class="empty-order">Your order is currently empty.</p>
+        </div>
+
+        <div class="order-footer">
+            <div class="order-total">
+                <span>Total</span>
+                <strong id="orderTotal">₦0</strong>
+            </div>
+            <button class="clear-order" id="clearOrder">Clear Order</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
